@@ -1,0 +1,268 @@
+@import "App.css";
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.text-cm-primary {
+    color: #006dc9;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.mainheader_container {
+    position: sticky;
+    background-color: #000000;
+    padding: 20px 38px 20px 32px;
+  }
+  
+.mainheader_title {
+  position: relative;
+}
+
+.mainheader_main-link {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  pointer-events: none;
+}
+  
+  .mainheader_sliding-header-menu {
+    top: 72px;
+  }
+  
+  .mainheader_sliding-menu-mask {
+    top: 72px;
+  }
+  
+  .mainheader_menu-widgets {
+    display: flex;
+    margin-left: auto
+  }
+  
+  button {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .mainheader_caption-button {
+    width: auto;
+    padding-right: 1.1vw;
+    padding-left: 1.1vw;
+    border-right: solid 1px #80a6e1;
+    border-left: solid 1px #80a6e1;
+    text-align: left;
+    position: relative;
+  }
+
+  .mainheader_widgeticon-button {
+    width: 50px;
+    padding-right: 0.5vw;
+    padding-left: 1vw;
+    text-align: center;
+    position: relative;
+  }
+  
+  .mainheader_caption-button-title {
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+  }
+  
+  .mainheader_caption-chevron {
+    position: absolute !important;
+    top: 8px;
+    right: 32px;
+  }
+  
+  .caption-button-value {
+    font-size: 12px;
+    color: #eff2ff;
+    line-height: 1.25;
+  }
+  
+  .mainheader_widget-button-active {
+    --icon-primary: #95D2FD;
+  }
+  
+  .mainheader_logout-button {
+    width: 91px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #2c6bcc;
+    color: #fff;
+  }
+  
+  .mainheader_menu-content {
+    padding: 35px 40px;
+    position: relative;
+  }
+  
+  .mainheader_menu-content-list-button {
+    margin: 0 40px;
+    width: calc(100% - 80px) !important;
+  }
+  
+  .mainheader_menu-content-link-button {
+    display: inline-flex;
+    height: 59px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #404040;
+    border-bottom: solid 1px #e4e4e4;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    line-height: 1.3;
+
+  }
+  .mainheader_menu-content-link-button-disable{
+    pointer-events: none;
+    opacity:0.7;
+  }
+  
+  .mainheader_menu-content-link-button-active {
+    color:  #2c6bcc;
+  }
+  
+  .mainheader_menu-content-action-button {
+    font-size: 14px;
+    color: #2d6bcb;
+    margin: 0 0 0 auto;
+  }
+  
+  .mainheader_sliding-menu-footer {
+    width: 100%;
+    height: 75px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-shadow: 2px 2px 6px 0 rgba(187, 187, 187, 0.5);
+    background-color: #f8f8f8;
+    padding: 20px 37px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 34px;
+  }
+  
+  .mainheader_sliding-menu-content{
+    position: relative;
+  }
+  
+  .mainheader_menu-loader{
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 47px);
+    transform: translate(-50%, -50%);
+  }
+  
+  .mainheader_notification {
+    margin: 20px 40px;
+  }
+  
+  .mainheader_connector-slide-done {
+    display: none;
+  }
+  
+
+  /* White header CSS components */
+
+.TabHeader-module_base {
+  height: 56px;
+  box-shadow: 2px 2px 6px 0 rgba(187, 187, 187, 0.5);
+  background-color: #ffffff;
+  padding-left: 40px;
+  padding-right: 40px;
+  z-index: 15;
+  display: flex;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.TabHeader-module_service {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+.TabHeader-module_service svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 16px;
+}
+.TabHeader-module_service svg [class*=cc-service-icon-fill], .TabHeader-module_service svg [class*=primary-fill] {
+  fill: #006dc9;
+}
+.TabHeader-module_service svg [class*=cc-service-icon-stroke], .TabHeader-module_service svg [class*=primary-stroke] {
+  stroke: #006dc9;
+}
+.TabHeader-module_service span {
+  font-size: 20px;
+  line-height: 1.35;
+  color: #006dc9;
+}
+
+.TabHeader-module_tab-widgets {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
+}
+.TabHeader-module_tab-widgets > :not(:last-child) {
+  margin-right: 32px;
+}
+
+.TabLinks-module_container {
+  display: flex;
+}
+
+.TabLinks-module_link {
+  height: 100%;
+  line-height: 1.33;
+  font-size: 15px;
+  color: #006dc9;
+  align-items: center;
+  display: flex;
+  margin: 0 20px 0;
+  position: relative;
+  text-decoration: none;
+}
+.TabLinks-module_link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: calc(100% + 16px);
+  height: 4px;
+  left: -8px;
+  transform: scaleX(0);
+  background-color: #1fa0ff;
+}
+/* .TabLinks-module_link:hover::after {
+  transform: scaleX(1);
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: #bedcf2 !important; 
+} */
+
+.mainheader_caption-button-title:hover {
+  color: rgb(204, 204, 204);
+}
+
+.active {
+  color: #aed2f3;
+  font-weight: 600;
+}
+.active::after {
+  transform: scaleX(1);
+}
