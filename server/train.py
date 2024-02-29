@@ -4,7 +4,7 @@ import sys
 import os
 
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 
 def createIndex(path):
   max_input = 4096
