@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 CORS(app , resources={r"/data": {"origins": "*"}})
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 storage_context = StorageContext.from_defaults(persist_dir='Store')
 index = load_index_from_storage(storage_context)
 
